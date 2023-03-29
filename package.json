@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "ts-node-dev --transpile-only --ignore-watch node_modules index.ts"
+  },
+  "dependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10"
+  }
+}
