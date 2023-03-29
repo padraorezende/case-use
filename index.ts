@@ -8,9 +8,21 @@ const jsonData = JSON.parse(jsonString);
 
 // Cria um novo array apenas com os valores dos atributos 'comment'
 const commentsArray = jsonData.flatMap(root => [
-  ...root.single_line_comment.map(comment => ({  message: comment.comment })),
-  ...root.cont_single_line_comment.map(comment => ({  message: comment.comment })),
-  ...root.multi_line_comment.map(comment => ({  message: comment.comment }))
+  ...root.single_line_comment.map(comment => ({
+    message: comment.comment,
+    filename: root.metadata.filename,
+    line: comment.line_number
+  })),
+  ...root.cont_single_line_comment.map(comment => ({
+    message: comment.comment,
+    filename: root.metadata.filename,
+    line: comment.start_line
+  })),
+  ...root.multi_line_comment.map(comment => ({
+    message: comment.comment,
+    filename: root.metadata.filename,
+    line: comment.start_line
+  }))
 ]);
 
 const outputData = { comments: commentsArray };

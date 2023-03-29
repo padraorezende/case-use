@@ -9,6 +9,10 @@ $json.comments | ForEach-Object {
     # Concatena os comentários em uma única string separada por quebra de linha
     $comment = $_.message -join "`n"
 
+    # Armazena o nome do arquivo e o número da linha do comentário atual
+    $filename = $_.filename
+    $line = $_.line
+
     Write-Output $comment
 
     # Executa o comando com o comentário como input e armazena a saída em uma variável
@@ -20,6 +24,8 @@ $json.comments | ForEach-Object {
         $csvLine = [PSCustomObject]@{
             Status = "SATD"
             Comment = $comment
+            Filename = $filename
+            Line = $line
         }
         $csvLines += $csvLine
     } else {
@@ -27,6 +33,8 @@ $json.comments | ForEach-Object {
         $csvLine = [PSCustomObject]@{
             Status = "Not SATD"
             Comment = $comment
+            Filename = $filename
+            Line = $line
         }
         $csvLines += $csvLine
     }
