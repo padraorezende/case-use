@@ -42,7 +42,7 @@ Apos gerar o arquivo arquviodesaida.json executar o comando:
 yarn test
 ```
 
-Apos gerar o arquivo arquivoDeSaida.json altere o ./satd_detector.jar no diretorio especificado de acordo com as dependecias do seu computador para evitar erros e depois execute o comando :
+Apos gerar o arquivo arquivoDeSaida.json altere o ./satd_detector.jar no diretorio especificado de acordo com as dependecias do seu computador para evitar erros e depois execute o comando do powersheell :
 
 ```bash
 .\script.ps1
