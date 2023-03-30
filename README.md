@@ -13,6 +13,7 @@ Avaliando o Interplay entre SATD-C e SATD-I
 
 ## 🔖 Requisitos
 
+- [Java](https://www.oracle.com/br/java/technologies/downloads/)
 - [Python](https://www.python.org/downloads/)
 - [Nirjas](https://github.com/fossology/Nirjas)
 - [SATD Detector Core](https://github.com/Tbabm/SATDDetector-Core)
@@ -41,7 +42,7 @@ Apos gerar o arquivo arquviodesaida.json executar o comando:
 yarn test
 ```
 
-Apos gerar o arquivo arquivoDeSaida.json execute o comando :
+Apos gerar o arquivo arquivoDeSaida.json altere o ./satd_detector.jar no diretorio especificado de acordo com as dependecias do seu computador para evitar erros e depois execute o comando :
 
 ```bash
 .\script.ps1
