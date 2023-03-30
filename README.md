@@ -21,7 +21,7 @@ Avaliando o Interplay entre SATD-C e SATD-I
 
 ## 🚀 Como executar
 
-Clone o repositorio que deseja analizar:
+Clone o repositorio que deseja analizar.
 
 Clone o projeto e acesse a pasta do mesmo.
 
